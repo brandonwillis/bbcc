@@ -1,0 +1,55 @@
+img {
+  height: 175px;
+  width: 225px;
+}
+
+div {
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+button {
+  width: 50%;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+  font-size: 18px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  padding-bottom: 50px;
+}
+
+.dealCard {
+  padding: 15px;
+  width: 425px;
+  margin: 5px;
+}
+
+.topHeader {
+  font-size: 64px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.score {
+  font-size: 30px;
+  margin: 0;
+}
+
+.quote {
+  font-size: 32px;
+  font-style: italic;
+}

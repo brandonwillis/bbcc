@@ -1,0 +1,56 @@
+<div>
+  <h1 class="topHeader">Current Video Game Deals</h1>
+  <button ng-click="getDeals()" ng-hide="deals.length" class="buttonStyle">Get the latest deals</button>
+
+  <div ng-show="deals.length">
+    <h1 class="headerStyle">100</h1>
+    <p class="quote">You hear that? That's your stomach telling you that you haven't eaten in two days</p>
+    <div class="flex-center">
+      <div ng-repeat="deal in overNinety" class="dealCard">
+        <img ng-src="{{deal[2]}}" />
+        <p class="title">{{deal[0]}}</p>
+        <p class="score">Metacritic Score: {{deal[1]}}</p>
+      </div>
+    </div>
+
+    <h1 class="headerStyle">90</h1>
+    <p class="quote">Guaranteed to make your girlfriend/boyfriend ask you to stop playing</p>
+    <div class="flex-center">
+      <div ng-repeat="deal in overEighty" class="dealCard">
+        <img ng-src="{{deal[2]}}" />
+        <p class="title">{{deal[0]}}</p>
+        <p class="score">Metacritic Score: {{deal[1]}}</p>
+      </div>
+    </div>
+
+    <h1 class="headerStyle">80</h1>
+    <p class="quote">Comparable to sleeping on a futon</p>
+    <div class="flex-center">
+      <div ng-repeat="deal in overSeventy" class="dealCard">
+        <img ng-src="{{deal[2]}}" />
+        <p class="title">{{deal[0]}}</p>
+        <p class="score">Metacritic Score: {{deal[1]}}</p>
+      </div>
+    </div>
+
+    <h1 class="headerStyle">70</h1>
+    <p class="quote">Kinda like receiving candy corn while trick-or-treating</p>
+    <div class="flex-center">
+      <div ng-repeat="deal in overSixty" class="dealCard">
+        <img ng-src="{{deal[2]}}" />
+        <p class="title">{{deal[0]}}</p>
+        <p class="score">Metacritic Score: {{deal[1]}}</p>
+      </div>
+    </div>
+
+    <h1 class="headerStyle">60 & Below</h1>
+    <p class="quote">Slightly more fun than watching grass grow</p>
+    <div class="flex-center">
+      <div ng-repeat="deal in dontBotherPlaying" class="dealCard">
+        <img ng-src="{{deal[2]}}" />
+        <p class="title">{{deal[0]}}</p>
+        <p class="score">Metacritic Score: {{deal[1]}}</p>
+      </div>
+    </div>
+  </div>
+</div>
